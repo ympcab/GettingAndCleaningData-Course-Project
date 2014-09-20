@@ -77,8 +77,8 @@ print(paste("Getting data", type))
 saveResult <- function (data,name)
   {       
   print(paste("Saving data", name)) 
-    file <- paste(result_folder, "/", name,".txt" ,sep="",row.names=FALSE) 
-  write.table(data,file) 
+    file <- paste(result_folder, "/", name,".txt" ,sep="") 
+  write.table(data,file,row.names=FALSE) 
   } 
  
 
